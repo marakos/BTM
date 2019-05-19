@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/position_spinner"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/position"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/add_standard"
+        android:layout_width="113dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/save_standard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/position_spinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="406dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/height"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/age"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/ft"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/height_input"
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/_2pts"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/_3pts"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/def_rebounds"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/blocks"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText15"
+                android:layout_width="14dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/personal_foul"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/off_rebounbs"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="14dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/assists"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/turnovers"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="14dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:padding="18dip"
+                android:text="@string/steals"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="106dp"
+        android:text="@string/export_schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="402dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="213dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_player_spinner">
+
+        <TableRow
+
+            android:id="@+id/firstRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/monday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/tuesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/wednesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/thursday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/friday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/saturday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/sunday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/monday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/tuesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/wednesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/thursday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/friday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/saturday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/sunday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/monday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="Tuesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Wednesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="Thursday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Friday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="Saturday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Sunday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView22"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Monday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="Tuesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Wednesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="Thursday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Friday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="Saturday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Sunday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView29"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Monday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="Tuesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="Wednesday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/thursday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/friday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text="@string/saturday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/sunday"
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView36"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="8sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/select_player_export_spinner"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="10dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/export_players"
+        app:layout_constraintBottom_toTopOf="@+id/select_player_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/select_player_spinner"
+        android:layout_width="145dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="42dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/players"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/select_player_export_spinner"
+        app:layout_constraintStart_toStartOf="@+id/select_player_export_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/select_player_export_spinner" />
+
+</android.support.constraint.ConstraintLayout>
