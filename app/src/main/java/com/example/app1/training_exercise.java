@@ -1,25 +1,23 @@
 package com.example.app1;
 
-public class training_exercise extends exercise {
+import java.io.Serializable;
 
-    private String training_category;
+public class training_exercise extends exercise implements Serializable {
+
+    private String tr_exercise_category;
     private int exercise_id;
-    private String onoma;
 
-    public training_exercise(String treatment_category, String onoma,int exercise_id) {
-        this.training_category = training_category;
-        this.exercise_id = exercise_id;
-        this.onoma=onoma;
+    public training_exercise(int exercise_id,String tr_exercise_category) {
+        super(exercise_id);
+        this.tr_exercise_category = tr_exercise_category;
     }
 
-    public void setcategory(String i)
-    {
-        training_category=i;
+    public String getTrainingExerciseCategory() {
+        return tr_exercise_category;
     }
 
-    String getcategory()
-    {
-        return training_category;
+    public void setTrainingExerciseCategory(String tr_exercise_category) {
+        this.tr_exercise_category = tr_exercise_category;
     }
 
     public void setid(int id)
@@ -32,14 +30,8 @@ public class training_exercise extends exercise {
         return exercise_id;
     }
 
-    public void setonoma(String onoma1)
-    {
-        onoma=onoma1;
-    }
 
-    String getonoma()
-    {
-        return onoma;
-    }
 }
+
+
 

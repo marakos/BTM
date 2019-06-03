@@ -1,9 +1,11 @@
 package com.example.app1;
 
-public class team_standards{
+import java.io.Serializable;
+
+public class team_standards implements Serializable {
     private String team_position;
     private float team_height,team_age,team_ft_per, team_2pts_per, team_3pts_per, team_reb_def, team_reb_off, team_assists, team_to, team_steals, team_blocks, team_foul;
-  
+
     public team_standards(String position,float height,float age, float ft_per,float twopts_per, float threepts_per, float reb_off, float reb_def, float assists, float to, float steals, float blocks, float foul) {
         this.team_position = position;
         this.team_height = height;

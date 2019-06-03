@@ -1,6 +1,8 @@
-package com.example.btm;
+package com.example.app1;
 
-public class app_settings {
+import java.io.Serializable;
+
+public class app_settings implements Serializable {
 
     private String setting_name;
     private String setting_feature;

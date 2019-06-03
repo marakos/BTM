@@ -1,16 +1,25 @@
 package com.example.app1;
-import java.lang.*;
 
-public abstract class features {
-    private String features_name;
+import java.io.Serializable;
 
-    public void features_name(String name){
+public abstract class features implements Serializable {
+
+    protected String features_name;
+
+    public features(String name){
         this.features_name = name;
     }
-    public void setFeatures_name(String name){
+
+    public features(){
+
+    }
+
+    public void setFeatures_name(String name) {
         this.features_name = name;
     }
-    public String getFeautures_name(){
+
+    public String getFeautures_name() {
         return this.features_name;
     }
+
 }

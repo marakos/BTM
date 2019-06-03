@@ -1,6 +1,8 @@
 package com.example.app1;
 
-public class player_info {
+import java.io.Serializable;
+
+public class player_info implements Serializable {
 
     // fields
     private float player_height;

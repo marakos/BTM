@@ -1,7 +1,10 @@
 package com.example.app1;
 
-public class chart {
+import java.io.Serializable;
 
+public class chart implements Serializable {
+
+    public com.example.app1.chart setChart_id;
     //fields
     private int chart_type;
     private int chart_id;

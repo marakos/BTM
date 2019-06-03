@@ -1,6 +1,5 @@
 package com.example.app1;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,18 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.support.v7.app.AppCompatActivity;
-import android.app.Activity;
-import android.graphics.PixelFormat;
-import android.media.MediaPlayer;
 import android.net.Uri;
-import android.os.Bundle;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 import android.widget.VideoView;
-import android.net.Uri;
 import android.widget.MediaController;
 
 

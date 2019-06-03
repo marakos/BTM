@@ -1,6 +1,8 @@
 package com.example.app1;
 
-public class match {
+import java.io.Serializable;
+
+public class match implements Serializable {
     private int match_id;
     private String match_opp;
     private String match_date;

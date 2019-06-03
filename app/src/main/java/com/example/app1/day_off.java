@@ -1,6 +1,8 @@
 package com.example.app1;
 
-public class day_off {
+import java.io.Serializable;
+
+public class day_off implements Serializable {
     private int day_off_id;
     private String day_off_day;
 
